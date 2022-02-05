@@ -1,0 +1,49 @@
+footer{
+    margin-top: 6rem;
+    padding: 4rem 5rem 1rem;
+    background-image: linear-gradient(#333670, #181A43);
+    border-top: 1px solid #7A80E2;
+}
+.footer-content{
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #7A80E2;
+    height: 10rem;
+
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    h3{
+        margin-top: 0;
+    }
+    .footer-link{
+        text-decoration: none;
+        color: #78DBAD;
+    }
+    .footer-link.white{
+        color: #fff;
+    }
+    .metacoin-bw{
+        width: 200px;
+    }
+    .social{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1rem;
+        img{
+            width: 30px;
+        }
+    }
+}
+.footer-foot{
+    text-align: right;
+    font-size: 12px;
+    margin-top: 2rem;
+}

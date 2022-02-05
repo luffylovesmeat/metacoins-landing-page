@@ -1,0 +1,67 @@
+.App {
+  max-width: 1920px;
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  background-color: #181a43;
+}
+
+h2 {
+  font-size: 38px;
+}
+.align-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  .content-box {
+    padding-top: 2rem;
+  }
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  width: 600px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background-color: #77d8ae;
+  }
+  p {
+    margin-bottom: 6rem;
+  }
+}
+
+.btn {
+  background-image: linear-gradient(to top right, #78dbad, #4f4ed6);
+  border: none;
+  height: 2.5rem;
+  width: 10rem;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.btn-outline {
+  height: 2.5rem;
+  width: 10rem;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
+  border: solid 2px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(to top right, #78dbad, #4f4ed6);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #181a43 inset;
+}

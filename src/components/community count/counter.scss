@@ -1,0 +1,39 @@
+.counter-box {
+  margin-top: 8rem;
+  padding: 0 5rem;
+  position: relative;
+  .content-box {
+    padding-top: 2rem;
+  }
+}
+.counter {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.num-box {
+  position: relative;
+  height: 90px;
+  background-color: #181a43;
+  border-radius: 6px;
+  width: 65px;
+  text-align: center;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  .number {
+    position: relative;
+    z-index: 10;
+    font-size: 64px;
+  }
+  &::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      background-color: rgba($color: #707070, $alpha: 0.25);
+      z-index: 5;
+  }
+}

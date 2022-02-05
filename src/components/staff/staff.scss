@@ -1,0 +1,38 @@
+.staff {
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12rem;
+  .content-box {
+    margin-top: 6rem;
+  }
+}
+
+.staff-members {
+  display: flex;
+}
+
+.staff-card {
+  margin-left: 1rem;
+  margin-top: 8rem;
+  background-image: linear-gradient(#47548d, #0d1f53);
+  max-width: 180px;
+  height: 200px;
+  max-height: 200px;
+  border-radius: 6px;
+  padding: 3rem 2rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  .staff-img {
+    position: absolute;
+    max-width: 40%;
+    top: -3rem;
+  }
+  .linkedIn-img {
+    margin-top: 1rem;
+    width: 40%;
+  }
+}

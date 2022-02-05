@@ -1,0 +1,17 @@
+.home-banner {
+  color: #fff;
+  margin-top: 6rem;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  .banner-content {
+    padding-top: 2rem;  
+  }
+  button{
+      margin-right: 2rem;
+  }
+
+  .banner-cube {
+    max-width: 600px;
+  }
+}

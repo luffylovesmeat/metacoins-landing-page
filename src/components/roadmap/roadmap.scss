@@ -1,0 +1,30 @@
+.roadmap {
+  padding: 0 5rem;
+  margin-top: 8rem;
+}
+
+.roadmap-map {
+    margin-top: 4rem;
+  img {
+    width: 100%;
+  }
+}
+
+.roadmaps {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.map {
+  width: 100px;
+  font-size: 12px;
+}
+
+.map-1, .map-3{
+    transform: translateY(100%);
+}
+
+.content-box {
+  padding-top: 2rem;
+}
