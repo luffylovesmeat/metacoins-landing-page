@@ -1,16 +1,26 @@
 import React from "react";
 import "./header.scss";
 import metacoinLogo from "../../assets/images/metacoin-logo.svg";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <nav>
       <div className="navbar-brand">
-        <img src={metacoinLogo} alt="metacoins-logo" />
+        <img
+          onClick={() => navigate("/")}
+          src={metacoinLogo}
+          alt="metacoins-logo"
+        />
       </div>
       <div className="navbar-menu">
-          <a className="navbar-link" href="/">Create NFT</a>
-          <button className="navbar-link btn">Login</button>
+        <NavLink className="navbar-link" to="/">
+          Create NFT
+        </NavLink>
+        <button onClick={() => navigate("/login")} className="navbar-link btn">
+          Login
+        </button>
       </div>
     </nav>
   );

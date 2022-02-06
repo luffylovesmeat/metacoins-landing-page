@@ -1,10 +1,8 @@
 .App {
   max-width: 1920px;
   font-size: 14px;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: top;
-  background-color: #181a43;
+  height: 100%;
+  position: relative;
 }
 
 h2 {
@@ -47,6 +45,7 @@ h2 {
   font-size: 14px;
   border-radius: 6px;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn-outline {
@@ -64,4 +63,18 @@ h2 {
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #181a43 inset;
+}
+
+.link{
+  text-decoration: none;
+  color: #fff;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center{
+  display: flex;
+  justify-content: center;
 }

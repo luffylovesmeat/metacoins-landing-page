@@ -1,28 +1,19 @@
 import "./App.scss";
-import backroundImg from "./assets/images/background.svg";
-import Counter from "./components/community count/Counter";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import HomeBanner from "./components/home banner/HomeBanner";
-import Partners from "./components/partners/Partners";
-import Roadmap from "./components/roadmap/Roadmap";
-import Services from "./components/services/Services";
-import Staff from "./components/staff/Staff";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/pages/home/Home";
+import Login from "./components/pages/login/Login";
 
 function App() {
   return (
-    <div className="App" style={{ backgroundImage: `url(${backroundImg})` }}>
-      <Header />
-      <div>
-        <HomeBanner />
-        <Counter />
-        <Services />
-        <Partners />
-        <Roadmap />
-        <Staff />
-        <Footer />
+    <Router>
+      <div className="App" >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+
       </div>
-    </div>
+    </Router>
   );
 }
 
