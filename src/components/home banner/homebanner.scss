@@ -10,8 +10,22 @@
   button{
       margin-right: 2rem;
   }
+  .buttons-div{
+    display: flex;
+  }
 
   .banner-cube {
-    max-width: 600px;
+    max-width: 50vw;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .home-banner{
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+    display: block;
+  }
+  button{
+    margin-right: 0;
+}
 }

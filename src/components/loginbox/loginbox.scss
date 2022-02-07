@@ -1,6 +1,6 @@
 .login-box {
   width: 25vw;
-  margin-top: 3rem;
+  margin: 2rem 0 0;
   border-radius: 8px;
   background-color: #151744;
   position: relative;
@@ -13,6 +13,8 @@
     left: 0;
     height: 8px;
     width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     background-image: linear-gradient(to right, #71d8b1, #4d58d8);
   }
 }
@@ -46,7 +48,7 @@
 
 .login-using {
   display: flex;
-  margin: 2rem 0;
+  margin: 1rem 0;
   justify-content: space-between;
   .login-using-btn {
     cursor: pointer;
@@ -66,7 +68,7 @@ form {
   & > div {
     padding-bottom: 1rem;
   }
-  .row>div{
+  .row > div {
     position: relative;
     left: -12px;
   }
@@ -85,8 +87,29 @@ form {
   }
 }
 
+.forgot-password-link {
+  color: #7d7d7d !important;
+  text-decoration: underline !important;
+}
 
-.forgot-password-link{
-    color: #7D7D7D !important;
-    text-decoration: underline !important;
+@media screen and (max-width: 768px) {
+  .login-box {
+    width: auto;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 1.5rem;
+  }
+  .login-using {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-evenly;
+    .login-using-btn {
+      width: 3rem;
+      height: 3rem;
+      background-color: #243278;
+      img {
+        max-width: 2rem;
+      }
+    }
+  }
 }

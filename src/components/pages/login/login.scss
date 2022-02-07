@@ -1,11 +1,17 @@
 .login-page {
   height: 100% !important;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: auto;
   background-position: top;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url(../../../assets/images/background-1.png);
+}
+
+@media screen and (max-width: 768px) {
+  .login-page {
+    padding: 2.5rem 1.5rem 6rem;
+    justify-content: start;
+  }
 }

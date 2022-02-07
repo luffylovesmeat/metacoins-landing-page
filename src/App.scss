@@ -78,3 +78,40 @@ h2 {
   display: flex;
   justify-content: center;
 }
+.mobile-visible{
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .tablet-hidden{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .mobile-hidden{
+    display: none;
+  }
+  .mobile-visible{
+    display: block;
+  }
+  h2{
+    font-size: 24px;
+  }
+  .content-box {
+    width: auto;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      width: 80px;
+      height: 2px;
+      background-color: #77d8ae;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import "./counter.scss";
 
 const Counter = () => {
   const [users, setUsers] = useState(19999);
-    
+
   return (
     <div className="counter-box">
       <div className="content-box">
@@ -20,7 +20,9 @@ const Counter = () => {
               );
             })}
         </div>
-        <button className="btn">Join Us Now</button>
+        <div className="right-align-sm">
+          <button className="btn">Join Us Now</button>
+        </div>
       </div>
     </div>
   );

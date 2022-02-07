@@ -14,12 +14,12 @@ const HomeBanner = () => {
           Enter the metaverse, with metacoins. Work and play is merging and we
           are at the forefront of the new token economy.
         </p>
-        <div>
+        <div className="buttons-div">
           <button className="btn">Pre Registration</button>
           <button className="btn-outline">Join Community</button>
         </div>
       </div>
-      <div>
+      <div className="mobile-hidden tablet-hidden">
         <img className="banner-cube" src={bannerCube} alt="banner-cube" />
       </div>
     </div>

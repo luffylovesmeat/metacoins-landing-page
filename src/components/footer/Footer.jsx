@@ -8,7 +8,7 @@ import twitterImg from "../../assets/images/twitter.svg";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer>
+    <footer className="mobile-hidden">
       <div className="footer-content">
         <div className="footer-col">
           <img

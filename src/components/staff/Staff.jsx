@@ -4,10 +4,16 @@ import staff1 from "../../assets/images/Mask Group 1.png";
 import staff2 from "../../assets/images/Mask Group 2.png";
 import staff3 from "../../assets/images/Mask Group 3.png";
 import linkedInImg from "../../assets/images/linkedIn.svg";
+import Carousel from 'react-elastic-carousel'
 
 const Staff = () => {
+  const breakpoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 768, itemsToShow: 3 },
+  ];
+
   const members = [
-    {
+    { 
       name: `Daniel Dos Santos`,
       image: staff1,
       post: `CEO`,
@@ -38,7 +44,7 @@ const Staff = () => {
           passion for revolutionizing the gaming industry by blockchain.
         </p>
       </div>
-      <div className="staff-members">
+      <Carousel breakPoints={breakpoints} showArrows={false} className="staff-members">
         {members.map((member) => {
           const { name, image, post, linkedin } = member;
           return (
@@ -50,7 +56,7 @@ const Staff = () => {
             </div>
           );
         })}
-      </div>
+      </Carousel>
     </div>
   );
 };

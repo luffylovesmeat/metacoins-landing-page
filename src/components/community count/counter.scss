@@ -37,3 +37,23 @@
       z-index: 5;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .counter {
+    display: flex;
+    justify-content: end;
+  }
+  .counter-box {
+    margin-top: 4rem;
+    padding: 0 1.5rem;
+    position: relative;
+    .content-box {
+      padding-top: 2rem;
+      text-align: right;
+      &::before{
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}
