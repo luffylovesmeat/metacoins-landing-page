@@ -6,7 +6,7 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 
-const Header = () => {
+const Header = (props) => {
   const navigate = useNavigate();
 
   const Search = styled("div")(({ theme }) => ({
@@ -51,7 +51,7 @@ const Header = () => {
   }));
 
   return (
-    <nav>
+    <nav className={props.class}>
       <div className="navbar-brand">
         <img
           onClick={() => navigate("/")}

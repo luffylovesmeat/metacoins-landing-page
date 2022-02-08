@@ -1,0 +1,33 @@
+.logged-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  height: 4rem;
+}
+.header-menu {
+  display: flex;
+}
+.header-logo {
+  max-height: 2rem;
+}
+.btn-link {
+  background: none;
+  display: flex;
+//   justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 1rem;
+}
+.profile-btn {
+  padding: 0.5rem 2rem;
+  border: 1px solid #6c77a1;
+  background-color: #1d205c;
+  border-radius: 6px;
+}

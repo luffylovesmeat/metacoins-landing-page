@@ -1,5 +1,5 @@
 import React from "react";
-import bannerCube from "../../assets/images/banner-cube.svg";
+import backroundImg from '../../assets/images/Group-802-final.webp'
 import "./homebanner.scss"
 
 const HomeBanner = () => {
@@ -20,7 +20,7 @@ const HomeBanner = () => {
         </div>
       </div>
       <div className="mobile-hidden tablet-hidden">
-        <img className="banner-cube" src={bannerCube} alt="banner-cube" />
+        <img className="banner-cube" src={backroundImg} alt="banner-cube" />
       </div>
     </div>
   );

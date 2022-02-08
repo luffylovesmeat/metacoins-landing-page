@@ -8,6 +8,14 @@
 h2 {
   font-size: 38px;
 }
+h4{
+  font-weight: 400;
+}
+
+.page{
+  height: 100% !important ;
+}
+
 .align-right {
   display: flex;
   align-items: flex-end;
@@ -65,38 +73,66 @@ h2 {
   box-shadow: 2px 1000px 1px #181a43 inset;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: #fff;
 }
-.row{
+.row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.center{
+.center {
   display: flex;
   justify-content: center;
 }
-.mobile-visible{
+.mobile-visible {
+  display: none;
+}
+.mobile-visible-flex {
   display: none;
 }
 
+.textfield-label {
+  color: #6c77a1 !important;
+
+}
+.textfield {
+  color: #fff !important;
+  border-color: #6c77a1 !important;
+  font-size: 14px;
+  &::before {
+    border-color: #6c77a1 !important;
+  }
+  &::placeholder{
+    font-weight: 400 !important;
+    font-style: 'italic' !important;
+  }
+}
+
+.MuiOutlinedInput-notchedOutline{
+  border-color: #6c77a1 !important;
+
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .tablet-hidden{
+  .tablet-hidden {
     display: none;
   }
 }
 
-
 @media screen and (max-width: 767px) {
-  .mobile-hidden{
-    display: none;
+  .mobile-hidden {
+    display: none !important;
   }
-  .mobile-visible{
+  .mobile-visible {
     display: block;
   }
-  h2{
+  .mobile-visible-flex{
+    display: flex;
+  }
+  h2 {
     font-size: 24px;
   }
   .content-box {

@@ -4,7 +4,7 @@ import Carousel from "react-elastic-carousel";
 import MetaServicesImg from "../../assets/images/metaServices.svg";
 
 const MultiCarousel = () => {
-  const [state, setState] = useState(true);
+  const [state, setState] = useState(window.innerWidth <= 1000 ? false : true);
   useEffect(() => {
     window.addEventListener("resize", () => {
       setState(window.innerWidth <= 1000 ? false : true);

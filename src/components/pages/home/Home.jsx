@@ -1,5 +1,4 @@
 import React from "react";
-import backroundImg from ".././../../assets/images/background.svg";
 import HomeBanner from "../../home banner/HomeBanner";
 import Partners from "../../partners/Partners";
 import Roadmap from "../../roadmap/Roadmap";
@@ -12,7 +11,7 @@ import './home.scss'
 
 const Home = () => {
   return (
-    <div className="home-page" style={{ backgroundImage: `url(${backroundImg})` }}>
+    <div className="home-page">
       <Header />
       <HomeBanner />
       <Counter />
