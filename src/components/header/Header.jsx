@@ -60,7 +60,7 @@ const Header = (props) => {
         />
       </div>
       <div className="navbar-menu mobile-hidden">
-        <NavLink className="navbar-link" to="/">
+        <NavLink className="navbar-link" to="/create">
           Create NFT
         </NavLink>
         <button onClick={() => navigate("/login")} className="navbar-link btn">
