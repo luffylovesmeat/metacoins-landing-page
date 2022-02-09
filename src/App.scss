@@ -8,14 +8,14 @@
 h2 {
   font-size: 38px;
 }
-h3{
-  color: #73DBB1;
+h3 {
+  color: #73dbb1;
 }
-h4{
+h4 {
   font-weight: 400;
 }
 
-.page{
+.page {
   height: 100% !important ;
 }
 
@@ -47,6 +47,9 @@ h4{
     margin-bottom: 6rem;
   }
 }
+.accent-color {
+  color: #73dab1 !important;
+}
 
 .btn {
   background-image: linear-gradient(to top right, #78dbad, #4f4ed6);
@@ -65,6 +68,7 @@ h4{
   font-size: 14px;
   border-radius: 6px;
   color: #fff;
+  cursor: pointer;
   border: solid 2px transparent;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0),
@@ -74,6 +78,10 @@ h4{
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #181a43 inset;
+}
+
+.hidden{
+  display: none;
 }
 
 .link {
@@ -98,7 +106,6 @@ h4{
 
 .textfield-label {
   color: #6c77a1 !important;
-
 }
 .textfield {
   color: #fff !important;
@@ -107,17 +114,18 @@ h4{
   &::before {
     border-color: #6c77a1 !important;
   }
-  &::placeholder{
+  &::placeholder {
     font-weight: 400 !important;
-    font-style: 'italic' !important;
+    font-style: "italic" !important;
   }
 }
-
-.MuiOutlinedInput-notchedOutline{
-  border-color: #6c77a1 !important;
-
+.right-1rem {
+  margin-right: 1rem;
 }
 
+.MuiOutlinedInput-notchedOutline {
+  border-color: #6c77a1 !important;
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .tablet-hidden {
@@ -132,7 +140,7 @@ h4{
   .mobile-visible {
     display: block;
   }
-  .mobile-visible-flex{
+  .mobile-visible-flex {
     display: flex;
   }
   h2 {

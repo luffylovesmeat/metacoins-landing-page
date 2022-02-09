@@ -1,0 +1,27 @@
+.dashboard-page {
+  background-color: #181a43;
+  min-height: 100%;
+  padding: 6rem 5rem;
+  & > .row {
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-switch-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+  }
+  .page-switch {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  .dashboard-page {
+    min-height: 100%;
+    padding: 6rem 1.5rem;
+  }
+}

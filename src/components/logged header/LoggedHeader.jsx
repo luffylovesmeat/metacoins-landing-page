@@ -21,7 +21,6 @@ const LoggedHeader = () => {
           Services
         </div>
         <Menu
-          id="basic-menu"
           anchorEl={anchorEl}
           open={open}
           onClose={handleClose}
@@ -29,9 +28,13 @@ const LoggedHeader = () => {
             "aria-labelledby": "basic-button",
           }}
         >
-          <MenuItem onClick={handleClose}>Service 1</MenuItem>
-          <MenuItem onClick={handleClose}>Service 2</MenuItem>
-          <MenuItem onClick={handleClose}>Service 3</MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link className="link accent-color" to="/marketplace">
+              Marketplace
+            </Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>Liquidity Locker</MenuItem>
+          <MenuItem onClick={handleClose}>Token Locker</MenuItem>
         </Menu>
         <div className="btn-link">Dashboard</div>
         <div className="btn-link">
