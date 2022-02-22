@@ -27,6 +27,7 @@ const LoggedHeader = () => {
           MenuListProps={{
             "aria-labelledby": "basic-button",
           }}
+          className='nav-menu'
         >
           <MenuItem onClick={handleClose}>
             <Link className="link accent-color" to="/marketplace">
@@ -35,6 +36,8 @@ const LoggedHeader = () => {
           </MenuItem>
           <MenuItem onClick={handleClose}>Liquidity Locker</MenuItem>
           <MenuItem onClick={handleClose}>Token Locker</MenuItem>
+          <MenuItem onClick={handleClose}>Launchpad</MenuItem>
+          <MenuItem onClick={handleClose}>Staking</MenuItem>
         </Menu>
         <div className="btn-link">Dashboard</div>
         <div className="btn-link">
@@ -42,6 +45,7 @@ const LoggedHeader = () => {
             Create NFT
           </Link>
         </div>
+        <button className="btn connect-btn">Connect</button>
         <div className="profile-btn">Profile Name</div>
       </div>
     </div>

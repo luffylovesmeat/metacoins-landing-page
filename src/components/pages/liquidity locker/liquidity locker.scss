@@ -1,0 +1,50 @@
+.liquidity-locker {
+  padding: 5rem 5rem;
+  min-height: 100%;
+  .content-box {
+    flex-direction: row;
+    padding: 1rem 0 0;
+    width: 100%;
+    .network-select {
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.locker-exchange-select {
+  background-color: #151744;
+  margin-top: 0;
+  padding: 2rem 1.5rem;
+  h4 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  button{
+      margin-right: 1rem;
+  }
+}
+.lock-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 0 3rem;
+  .box{
+    width: 48%;
+    margin-top: 2rem;
+  }
+  .MuiInput-underline {
+    &::after {
+      border-color: #fff !important;
+    }
+  }
+}
+
+.liq-lock-area {
+  color: #6C77A1 !important;
+}
+.liq-lock-label {
+  color: #fff !important;
+  width: 100%;
+}

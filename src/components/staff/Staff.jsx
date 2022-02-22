@@ -35,7 +35,7 @@ const Staff = () => {
   return (
     <div className="staff">
       <div className="content-box">
-        <h2>Team Metacoin</h2>
+        <h2>Team MetaCoins</h2>
         <p>
           Metacoin is a group of +50 entrepreneurs, designers, artists, and
           developers with rich experience in art, design, and game development
