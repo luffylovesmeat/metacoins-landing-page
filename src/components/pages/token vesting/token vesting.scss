@@ -1,0 +1,46 @@
+.token-vesting-page {
+  padding: 5rem 5rem;
+  .content-box {
+    flex-direction: row !important;
+    width: auto;
+    .network-select {
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+.token-vesting-body {
+  position: relative;
+  border-radius: 6px;
+  background-color: #151744;
+  padding: 1rem 2rem;
+  .row{
+    align-items: stretch;
+  }
+}
+.btn-outline-blue {
+  background-color: inherit;
+  border: 2px solid #6c77a1;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  margin-left: 1rem;
+}
+.vesting-input-field {
+  color: #6c7791 !important;
+}
+.vesting-inputs{
+    width: 49%;
+    div{
+        margin-top: 1rem;
+    }
+}
+.vesting-input-label {
+  color: #fff !important;
+}
+.MuiFormHelperText-root {
+  color: #76d3b0 !important;
+  text-align: right !important;
+  font-size: 0.6rem !important;
+}

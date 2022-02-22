@@ -16,7 +16,7 @@ h4 {
 }
 
 .page {
-  height: 100% !important ;
+  min-height: 100% !important ;
 }
 
 .align-right {
@@ -81,7 +81,7 @@ h4 {
 }
 
 .hidden{
-  display: none;
+  display: none !important;
 }
 
 .link {
